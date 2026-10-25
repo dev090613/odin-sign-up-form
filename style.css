@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'NorseBold';
+  src: url('/fonts/Norsebold.otf') format('woff2');
+  font-weight: 400;
+  font-style: bold;
+  font-display: swap;
+}
