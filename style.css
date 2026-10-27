@@ -1,4 +1,4 @@
-/* MINIMAL CSS RESET */
+/* MINIMAL CSS RESET# */
 *,
 *::before,
 *::after {
@@ -80,7 +80,7 @@ a {
 }
 
 .right-side {
-  padding: 3em;
+  /* margin-left: 3em; */
   flex: 3;
 }
 
@@ -120,7 +120,7 @@ a {
 
 .row-1, .row-2, .row-3 {
   display: flex;
-  gap: 2em;
+  gap: 4em;
 }
 
 .row {
@@ -132,7 +132,7 @@ a {
 .row-container {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1.5em;
   padding: 2em 0;
   margin-bottom: 1em;
 }
@@ -163,20 +163,20 @@ body {
 .description p {
   color: var(--clr-text);
   font-size: var(--fs-lg);
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.4;
 }
 
 .row-container > p {
   color: var(--clr-text);
   font-size: var(--fs-xl);
-  font-weight: 600;
+  font-weight: 800;
 }
 
 label {
   color: var(--clr-label);
   font-size: var(--fs-sm);
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: 0.05em;
 }
 
@@ -201,6 +201,10 @@ label {
   margin-bottom: 1.5em;
 }
 
+.createBtn, .account {
+  margin-left: 3em;
+}
+
 /* BUTTON */
 :root {
   --clr-btn: #596D48;
@@ -218,6 +222,30 @@ label {
   transform: scale(1.05);
 }
 
-/* input { */
-/*   border-radius: 1px; */
-/* } */
+input {
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 0.15);
+}
+
+#password:invalid,
+#confirm:invalid {
+  border-color: #dc2626;
+}
+
+.row-container {
+  background-color: #fff;
+}
+
+.right-side {
+  background-color: #f3f4f6;
+}
+
+div.description, div.row-container {
+  padding: 3em;
+}
