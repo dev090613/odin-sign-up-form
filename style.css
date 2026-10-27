@@ -47,6 +47,10 @@ select {
   font-display: swap;
 }
 
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
 a {
   color: inherit;
   /* text-decoration: none; */
@@ -125,13 +129,66 @@ a {
   width: 30%;
 }
 
-label {
-  font-size: 0.8em;
-}
-
 .row-container {
   display: flex;
   flex-direction: column;
   gap: 1em;
   padding: 2em 0;
 }
+
+.description {
+  padding-top: 6em;
+}
+
+.description .spaced {
+  margin-bottom: 1em;
+}
+
+.createBtn {
+  padding: 0.5em 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* FONT */
+:root {
+  --fs-base: 1rem;
+  --fs-sm: 0.75rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --clr-text: #1f2937;
+  --clr-label: #374151;
+}
+
+body {
+  font-size: var(--fs-base);
+}
+
+.description p {
+  color: var(--clr-text);
+  font-size: var(--fs-lg);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.row-container > p {
+  color: var(--clr-text);
+  font-size: var(--fs-xl);
+  font-weight: 600;
+}
+
+label {
+  color: var(--clr-label);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.account {
+  font-weight: 600;
+}
+
+.account a {
+  text-decoration: none;
+}
+
+.account a:hover { text-decoration: underline; }
