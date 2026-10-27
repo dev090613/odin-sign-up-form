@@ -115,7 +115,6 @@ a {
   bottom: 1em;
   width: 100%;
   text-align: center;
-  font-size: 1.2rem;
 }
 
 .row-1, .row-2, .row-3 {
@@ -126,7 +125,7 @@ a {
 .row {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 35%;
 }
 
 .row-container {
@@ -183,6 +182,10 @@ label {
   font-weight: 800;
   letter-spacing: 0.05em;
   margin-bottom: 0.25rem;
+}
+
+.image-credit {
+  font-size: var(--fs-sm);
 }
 
 .account {
@@ -263,4 +266,5 @@ div.description {
   padding-top: 8em;
   padding-left: 3em;
   padding-bottom: 5em;
+  width: 80%;
 }
