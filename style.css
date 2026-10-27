@@ -135,6 +135,7 @@ a {
   gap: 1.5em;
   padding: 2em 0;
   margin-bottom: 1em;
+  box-shadow: 0 4px 6px -6px rgb(0 0 0 / 0.15);
 }
 
 .description {
@@ -165,6 +166,7 @@ body {
   font-size: var(--fs-lg);
   font-weight: 800;
   line-height: 1.4;
+  transform: scaleY(1.1)
 }
 
 .row-container > p {
@@ -246,6 +248,16 @@ input:focus {
   background-color: #f3f4f6;
 }
 
-div.description, div.row-container {
-  padding: 3em;
+div.row-container {
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-bottom: 2em;
+}
+
+div.description {
+  padding-top: 8em;
+  padding-left: 3em;
+  padding-bottom: 5em;
 }
